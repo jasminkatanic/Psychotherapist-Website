@@ -1,0 +1,11 @@
+@import "./variables";
+
+.mobBg{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: $main-color;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}

@@ -1,0 +1,155 @@
+@import "./variables";
+@import "./animations";
+@import './mixins';
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
+
+.navigation{
+opacity: 0;
+visibility: hidden;
+
+
+
+
+&__checkbox{
+display: none;
+
+&:focus{
+    outline: 0;
+}
+
+}
+
+&__button{
+background-color: $main-color;
+height: 3rem;
+width: 3rem;
+position: fixed;
+top: 3rem;
+left: 2rem;
+border-radius: 10%;
+z-index: 20000;
+box-shadow: 0 1rem 3rem rgba($black-color,.1);
+text-align: center;
+cursor: pointer;
+opacity: 0;
+visibility: hidden;
+
+@include respond(maxNavBar){      
+  opacity: 1;
+  visibility: visible;
+}
+
+
+}    
+
+&__nav{
+height: 100vh;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 15000;
+
+opacity: 0;
+width: 0;
+transition: opacity 1s;
+
+}
+
+&__list{
+  position: relative;
+  top: 50%;        
+  transform: translateY(-50%);
+  list-style: none;
+  text-align: center;
+  width: 100%;    
+  display: flex;
+  flex-direction: column;   
+  padding: 0;
+  margin: auto;
+  justify-content: center;  
+  z-index: 2000;
+
+}
+
+&__item{
+margin: 1rem;
+
+}   
+
+&__link{
+  font-family: 'Cinzel', serif;
+  width: 80%;
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 300;
+  padding: .5rem 1rem;  
+  color: $white-color;
+  text-decoration: none;   
+  
+  @include respond(BS){      
+    font-size: 1.5rem;
+  }
+  
+}
+
+&__checkbox:checked ~ &__nav{
+opacity: 1;
+width: 100%;
+outline: none;
+}
+
+&__icon{
+position: relative;
+margin-top: 1.5rem;
+
+&,
+&::before,
+&::after{
+    width: 2rem;
+    height: 2px;
+    background-color: $white-color;
+    display: inline-block;            
+}
+
+&::before,
+&::after {
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+&::before {
+  top: -.5rem;
+  height: 2px;
+
+}
+&::after {top: .5rem;}
+}
+
+&__checkbox:checked + &__button {
+background-color: $white-color;
+}
+
+
+&__checkbox:checked + &__button &__icon {
+background-color: transparent;
+}
+
+&__checkbox:checked + &__button &__icon::before {
+top: 0;
+transform: rotate(45deg);
+background-color: $black-color;
+}
+
+&__checkbox:checked + &__button &__icon::after {
+top: 0;
+transform: rotate(-45deg);
+background-color: $black-color;    
+}
+
+@include respond(maxNavBar){      
+  opacity: 1;
+  visibility: visible;
+}
+
+}

@@ -1,0 +1,1353 @@
+@import "./variables";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,100&display=swap');
+@import "./mixins";
+
+.guest{
+  display: flex;
+  width: 100%;
+  height: 300vh;
+  flex-direction: column;  
+  
+    &-head{
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 85vh;
+      background-image: url(../img/vahida-gostovanja.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      
+
+      @include respond(maxNavBar){                                   
+        height: 250px;  
+        background-size: contain; 
+        background-repeat: no-repeat;          
+      }
+    }
+
+    &-section{
+      top: 100%;
+      display: flex;
+      width: 100%;
+      height: 200vh;
+      flex-direction: column;        
+
+        &-second{
+          display: flex;
+          width: 100%;
+          height: auto; 
+          flex-direction: column;
+          
+          &-head{
+            display: flex;
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+
+            &-main{
+              display: block;
+              width: 100%;
+              font-size: 3rem;
+              margin: 5% auto 0% auto;
+              font-family: 'Lato';
+              font-weight: 300;
+            }
+
+            &-sub{
+              display: block;
+              margin: 2% auto;
+              padding: 0% 10% 0% 10%;
+              font-size: 1.5rem;
+              font-family: 'Lato';
+              
+              @include respond(maxNavBar){                                   
+                padding: 0%;                   
+              }
+            }
+
+          }         
+
+          &-content{
+            display: flex;
+            width: 85%;
+            height: 100%;            
+            margin: auto;
+
+            &-item{
+              display: flex;
+              width: 100%;
+              height: 100%;
+              flex-direction: column;
+              
+                &-one{
+                  display: flex;
+                  width: 100%;
+                  height: auto;                  
+                  margin: 5% auto 5% auto;
+                  flex-direction: row;
+
+                  &-left{
+                    display: flex;
+                    width: 60%;
+                    height: 100%;                    
+
+                    &-content{
+                      display: flex;
+                      flex-direction: column;
+                      width: 100%;
+                      height: auto;
+                      padding: 3%;
+                      background-color: $ligth-gray-color;
+                      
+
+                      &-head{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 5% 0% 5% 0%;
+                        font-size: 1.8rem;
+                        float: left;
+                        font-weight: 600;                                              
+                      }
+
+                      &-txt{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 0% 0% 5% 0%;
+                        hyphens: auto;
+                        
+                        font-size: 1.4rem;
+                      }
+                      
+                    }
+                    @include respond(maxNavBar){                                   
+                      width: 100%;   
+                      margin: 2% auto 0% auto;                
+                    }
+                  }
+
+                  &-right{
+                    display: flex;
+                    width: 40%;
+                    height: auto;                    
+                    margin-left: 2%;
+
+                    &-vid{
+                      overflow: hidden;
+                      padding-bottom: 56.25%;
+                      position: relative;
+                      height: auto;
+                      width: 100%;
+                      
+                      iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                      }
+                      
+                    }
+                    @include respond(maxNavBar){                                   
+                      width: auto;  
+                      margin: 0;                 
+                    }
+                  }
+                  @include respond(maxNavBar){                                   
+                    flex-direction: column-reverse;                    
+                  }
+                }
+
+                &-two{
+                  display: flex;
+                  width: 100%;
+                  height: auto;
+                  margin: 0% auto 5% auto;                  
+
+                  &-left{
+                    display: flex;
+                    width: 40%;
+                    height: auto;                                      
+
+                    &-vid{
+                      overflow: hidden;
+                      padding-bottom: 56.25%;
+                      position: relative;
+                      height: auto;
+                      width: 100%;
+                      
+                      iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                      }
+                      
+                    }
+
+                    @include respond(maxNavBar){                                   
+                      width: 100%;                 
+                    }
+                  }
+
+                  &-right{
+                    display: flex;
+                    width: 60%;
+                    height: 100%;                    
+                    margin-left: 2%;
+
+                    &-content{
+                      display: flex;
+                      flex-direction: column;
+                      width: 100%;
+                      height: auto;
+                      padding: 3%;
+                      background-color: $ligth-gray-color;
+                      
+
+                      &-head{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 5% 0% 5% 0%;
+                        font-size: 1.8rem;
+                        float: left;
+                        font-weight: 600;                        
+                      }
+
+                      &-txt{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 0% 0% 5% 0%;
+                        hyphens: auto;
+                        
+                        font-size: 1.4rem;
+                        
+                      }
+                      
+                    }
+                    @include respond(maxNavBar){                                   
+                      width: 100%;  
+                      margin: 2% auto 0% auto;              
+                    }
+                  }
+                  @include respond(maxNavBar){                                   
+                    flex-direction: column;                  
+                  }
+                }
+
+                &-three{
+                  display: flex;
+                  width: 100%;
+                  height: auto;
+                  margin: 0% auto 5% auto;                  
+
+                  &-left{
+                    display: flex;
+                    width: 60%;
+                    height: 100%;                    
+
+                    &-content{
+                      display: flex;
+                      flex-direction: column;
+                      width: 100%;
+                      height: auto;
+                      padding: 3%;
+                      background-color: $ligth-gray-color;
+                      
+
+                      &-head{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 5% 0% 5% 0%;
+                        font-size: 1.8rem;
+                        float: left;
+                        font-weight: 600;                        
+                      }
+
+                      &-txt{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 0% 0% 5% 0%;
+                        hyphens: auto;
+                        
+                        font-size: 1.4rem;
+                        
+                      }
+                      
+                    }
+                    @include respond(maxNavBar){                                   
+                      width: 100%;
+                      margin: 2% auto 2% auto;                    
+                    }
+
+                  }
+
+                  &-right{
+                    display: flex;
+                    width: 40%;
+                    height: auto;                    
+                    margin-left: 2%;
+
+                    &-vid{
+                      overflow: hidden;
+                      padding-bottom: 56.25%;
+                      position: relative;
+                      height: auto;
+                      width: 100%;
+                      
+                      iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                      }
+                      
+                    }
+                    
+                    @include respond(maxNavBar){                                   
+                      width: 100%;
+                      margin: 0;                    
+                    }
+                  }
+                  @include respond(maxNavBar){                                   
+                    flex-direction: column-reverse;                    
+                  }
+                }
+
+                &-four{
+                  display: flex;
+                  width: 100%;
+                  height: auto;
+                  margin: 0% auto 5% auto;                  
+
+                  &-left{
+                    display: flex;
+                    width: 40%;
+                    height: auto;                                      
+
+                    &-vid{
+                      overflow: hidden;
+                      padding-bottom: 56.25%;
+                      position: relative;
+                      height: auto;
+                      width: 100%;
+                      
+                      iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                      }
+                      
+                    }
+
+                    @include respond(maxNavBar){                                   
+                      width: 100%;                 
+                    }
+                  }
+
+                  &-right{
+                    display: flex;
+                    width: 60%;
+                    height: 100%;                    
+                    margin-left: 2%;
+
+                    &-content{
+                      display: flex;
+                      flex-direction: column;
+                      width: 100%;
+                      height: auto;
+                      padding: 3%;
+                      background-color: $ligth-gray-color;
+                      
+
+                      &-head{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 5% 0% 5% 0%;
+                        font-size: 1.8rem;
+                        float: left;
+                        font-weight: 600;                        
+                      }
+
+                      &-txt{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 0% 0% 5% 0%;
+                        hyphens: auto;
+                        
+                        font-size: 1.4rem;
+                        
+                      }
+                      
+                    }
+                    @include respond(maxNavBar){                                   
+                      width: 100%;  
+                      margin: 2% auto 0% auto;              
+                    }
+                  }
+                  @include respond(maxNavBar){                                   
+                    flex-direction: column;                  
+                  }
+                }
+
+                &-five{
+                  display: flex;
+                  width: 100%;
+                  height: auto;
+                  margin: 0% auto 5% auto;                  
+
+                  &-left{
+                    display: flex;
+                    width: 60%;
+                    height: 100%;                    
+
+                    &-content{
+                      display: flex;
+                      flex-direction: column;
+                      width: 100%;
+                      height: auto;
+                      padding: 3%;
+                      background-color: $ligth-gray-color;
+                      
+
+                      &-head{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 5% 0% 5% 0%;
+                        font-size: 1.8rem;
+                        float: left;
+                        font-weight: 600;                        
+                      }
+
+                      &-txt{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 0% 0% 5% 0%;
+                        hyphens: auto;
+                        
+                        font-size: 1.4rem;
+                        
+                      }
+                      
+                    }
+                    @include respond(maxNavBar){                                   
+                      width: 100%;
+                      margin: 2% auto 2% auto;                    
+                    }
+
+                  }
+
+                  &-right{
+                    display: flex;
+                    width: 40%;
+                    height: auto;                    
+                    margin-left: 2%;
+
+                    &-vid{
+                      overflow: hidden;
+                      padding-bottom: 56.25%;
+                      position: relative;
+                      height: auto;
+                      width: 100%;
+                      
+                      iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                      }
+                      
+                    }
+                    
+                    @include respond(maxNavBar){                                   
+                      width: 100%;
+                      margin: 0;                    
+                    }
+                  }
+                  @include respond(maxNavBar){                                   
+                    flex-direction: column-reverse;                    
+                  }
+                }
+
+                &-six{
+                  display: flex;
+                  width: 100%;
+                  height: auto;
+                  margin: 0% auto 5% auto;                  
+
+                  &-left{
+                    display: flex;
+                    width: 40%;
+                    height: auto;                                      
+
+                    &-vid{
+                      overflow: hidden;
+                      padding-bottom: 56.25%;
+                      position: relative;
+                      height: auto;
+                      width: 100%;
+                      
+                      iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                      }
+                      
+                    }
+
+                    @include respond(maxNavBar){                                   
+                      width: 100%;                 
+                    }
+                  }
+
+                  &-right{
+                    display: flex;
+                    width: 60%;
+                    height: 100%;                    
+                    margin-left: 2%;
+
+                    &-content{
+                      display: flex;
+                      flex-direction: column;
+                      width: 100%;
+                      height: auto;
+                      padding: 3%;
+                      background-color: $ligth-gray-color;
+                      
+
+                      &-head{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 5% 0% 5% 0%;
+                        font-size: 1.8rem;
+                        float: left;
+                        font-weight: 600;                        
+                      }
+
+                      &-txt{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 0% 0% 5% 0%;
+                        hyphens: auto;
+                        
+                        font-size: 1.4rem;
+                        
+                      }
+                      
+                    }
+                    @include respond(maxNavBar){                                   
+                      width: 100%;  
+                      margin: 2% auto 0% auto;              
+                    }
+                  }
+                  @include respond(maxNavBar){                                   
+                    flex-direction: column;                  
+                  }
+                }
+
+                &-seven{
+                  display: flex;
+                  width: 100%;
+                  height: auto;
+                  margin: 0% auto 5% auto;                  
+
+                  &-left{
+                    display: flex;
+                    width: 60%;
+                    height: 100%;                    
+
+                    &-content{
+                      display: flex;
+                      flex-direction: column;
+                      width: 100%;
+                      height: auto;
+                      padding: 3%;
+                      background-color: $ligth-gray-color;
+                      
+
+                      &-head{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 5% 0% 5% 0%;
+                        font-size: 1.8rem;
+                        float: left;
+                        font-weight: 600;                        
+                      }
+
+                      &-txt{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 0% 0% 5% 0%;
+                        hyphens: auto;
+                        
+                        font-size: 1.4rem;
+                        flex-direction: column;
+
+                        p{
+                          margin: 0;
+                          margin-bottom: 3%;
+
+                          &:last-child{
+                            margin-bottom: 0;
+                          }
+                        }
+                        
+                      }
+                      
+                    }
+                    @include respond(maxNavBar){                                   
+                      width: 100%;
+                      margin: 2% auto 2% auto;                    
+                    }
+
+                  }
+
+                  &-right{
+                    display: flex;
+                    width: 40%;
+                    height: auto;                    
+                    margin-left: 2%;
+
+                    &-vid{
+                      overflow: hidden;
+                      padding-bottom: 56.25%;
+                      position: relative;
+                      height: auto;
+                      width: 100%;
+                      
+                      iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                      }
+                      
+                    }
+                    
+                    @include respond(maxNavBar){                                   
+                      width: 100%;
+                      margin: 0;                    
+                    }
+                  }
+                  @include respond(maxNavBar){                                   
+                    flex-direction: column-reverse;                    
+                  }
+                }
+
+                &-eight{
+                  display: flex;
+                  width: 100%;
+                  height: auto;
+                  margin: 0% auto 5% auto;                  
+
+                  &-left{
+                    display: flex;
+                    width: 40%;
+                    height: auto;                                      
+
+                    &-vid{
+                      overflow: hidden;
+                      padding-bottom: 56.25%;
+                      position: relative;
+                      height: auto;
+                      width: 100%;
+                      
+                      iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                      }
+                      
+                    }
+
+                    @include respond(maxNavBar){                                   
+                      width: 100%;                 
+                    }
+                  }
+
+                  &-right{
+                    display: flex;
+                    width: 60%;
+                    height: 100%;                    
+                    margin-left: 2%;
+
+                    &-content{
+                      display: flex;
+                      flex-direction: column;
+                      width: 100%;
+                      height: auto;
+                      padding: 3%;
+                      background-color: $ligth-gray-color;
+                      
+
+                      &-head{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 5% 0% 5% 0%;
+                        font-size: 1.8rem;
+                        float: left;
+                        font-weight: 600;                        
+                      }
+
+                      &-txt{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 0% 0% 5% 0%;
+                        hyphens: auto;
+                        
+                        font-size: 1.4rem;
+                        
+                      }
+                      
+                    }
+                    @include respond(maxNavBar){                                   
+                      width: 100%;  
+                      margin: 2% auto 0% auto;              
+                    }
+                  }
+                  @include respond(maxNavBar){                                   
+                    flex-direction: column;                  
+                  }
+                }
+
+                &-nine{
+                  display: flex;
+                  width: 100%;
+                  height: auto;
+                  margin: 0% auto 5% auto;                  
+
+                  &-left{
+                    display: flex;
+                    width: 60%;
+                    height: 100%;                    
+
+                    &-content{
+                      display: flex;
+                      flex-direction: column;
+                      width: 100%;
+                      height: auto;
+                      padding: 3%;
+                      background-color: $ligth-gray-color;
+                      
+
+                      &-head{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 5% 0% 5% 0%;
+                        font-size: 1.8rem;
+                        float: left;
+                        font-weight: 600;                        
+                      }
+
+                      &-txt{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 0% 0% 5% 0%;
+                        hyphens: auto;
+                        
+                        font-size: 1.4rem;
+                        flex-direction: column;
+
+                        p{
+                          margin: 0;
+                          margin-bottom: 3%;
+
+                          &:last-child{
+                            margin-bottom: 0;
+                          }
+                        }
+                        
+                      }
+                      
+                    }
+                    @include respond(maxNavBar){                                   
+                      width: 100%;
+                      margin: 2% auto 2% auto;                    
+                    }
+
+                  }
+
+                  &-right{
+                    display: flex;
+                    width: 40%;
+                    height: auto;                    
+                    margin-left: 2%;
+
+                    &-vid{
+                      overflow: hidden;
+                      padding-bottom: 56.25%;
+                      position: relative;
+                      height: auto;
+                      width: 100%;
+                      
+                      iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                      }
+                      
+                    }
+                    
+                    @include respond(maxNavBar){                                   
+                      width: 100%;
+                      margin: 0;                    
+                    }
+                  }
+                  @include respond(maxNavBar){                                   
+                    flex-direction: column-reverse;                    
+                  }
+                }
+
+                &-ten{
+                  display: flex;
+                  width: 100%;
+                  height: auto;
+                  margin: 0% auto 5% auto;                  
+
+                  &-left{
+                    display: flex;
+                    width: 40%;
+                    height: auto;                                      
+
+                    &-vid{
+                      overflow: hidden;
+                      padding-bottom: 56.25%;
+                      position: relative;
+                      height: auto;
+                      width: 100%;
+                      
+                      iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                      }
+                      
+                    }
+
+                    @include respond(maxNavBar){                                   
+                      width: 100%;                 
+                    }
+                  }
+
+                  &-right{
+                    display: flex;
+                    width: 60%;
+                    height: 100%;                    
+                    margin-left: 2%;
+
+                    &-content{
+                      display: flex;
+                      flex-direction: column;
+                      width: 100%;
+                      height: auto;
+                      padding: 3%;
+                      background-color: $ligth-gray-color;
+                      
+
+                      &-head{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 5% 0% 5% 0%;
+                        font-size: 1.8rem;
+                        float: left;
+                        font-weight: 600;                        
+                      }
+
+                      &-txt{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 0% 0% 5% 0%;
+                        hyphens: auto;
+                        
+                        font-size: 1.4rem;
+                        
+                      }
+                      
+                    }
+                    @include respond(maxNavBar){                                   
+                      width: 100%;  
+                      margin: 2% auto 0% auto;              
+                    }
+                  }
+                  @include respond(maxNavBar){                                   
+                    flex-direction: column;                  
+                  }
+                }
+
+                &-eleven{
+                  display: flex;
+                  width: 100%;
+                  height: auto;
+                  margin: 0% auto 5% auto;                  
+
+                  &-left{
+                    display: flex;
+                    width: 60%;
+                    height: 100%;                    
+
+                    &-content{
+                      display: flex;
+                      flex-direction: column;
+                      width: 100%;
+                      height: auto;
+                      padding: 3%;
+                      background-color: $ligth-gray-color;
+                      
+
+                      &-head{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 5% 0% 5% 0%;
+                        font-size: 1.8rem;
+                        float: left;
+                        font-weight: 600;                        
+                      }
+
+                      &-txt{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 0% 0% 5% 0%;
+                        hyphens: auto;
+                        
+                        font-size: 1.4rem;
+                        flex-direction: column;
+
+                        p{
+                          margin: 0;
+                          margin-bottom: 3%;
+
+                          &:last-child{
+                            margin-bottom: 0;
+                          }
+                        }
+                        
+                      }
+                      
+                    }
+                    @include respond(maxNavBar){                                   
+                      width: 100%;
+                      margin: 2% auto 2% auto;                    
+                    }
+
+                  }
+
+                  &-right{
+                    display: flex;
+                    width: 40%;
+                    height: auto;                    
+                    margin-left: 2%;
+
+                    &-vid{
+                      overflow: hidden;
+                      padding-bottom: 56.25%;
+                      position: relative;
+                      height: auto;
+                      width: 100%;
+                      
+                      iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                      }
+                      
+                    }
+                    
+                    @include respond(maxNavBar){                                   
+                      width: 100%;
+                      margin: 0;                    
+                    }
+                  }
+                  @include respond(maxNavBar){                                   
+                    flex-direction: column-reverse;                    
+                  }
+                }
+
+                &-twelve{
+                  display: flex;
+                  width: 100%;
+                  height: auto;
+                  margin: 0% auto 5% auto;                  
+
+                  &-left{
+                    display: flex;
+                    width: 40%;
+                    height: auto;                                      
+
+                    &-vid{
+                      overflow: hidden;
+                      padding-bottom: 56.25%;
+                      position: relative;
+                      height: auto;
+                      width: 100%;
+                      
+                      iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                      }
+                      
+                    }
+
+                    @include respond(maxNavBar){                                   
+                      width: 100%;                 
+                    }
+                  }
+
+                  &-right{
+                    display: flex;
+                    width: 60%;
+                    height: 100%;                    
+                    margin-left: 2%;
+
+                    &-content{
+                      display: flex;
+                      flex-direction: column;
+                      width: 100%;
+                      height: auto;
+                      padding: 3%;
+                      background-color: $ligth-gray-color;
+                      
+
+                      &-head{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 5% 0% 5% 0%;
+                        font-size: 1.8rem;
+                        float: left;
+                        font-weight: 600;                        
+                      }
+
+                      &-txt{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 0% 0% 5% 0%;
+                        hyphens: auto;
+                        
+                        font-size: 1.4rem;
+                        
+                      }
+                      
+                    }
+                    @include respond(maxNavBar){                                   
+                      width: 100%;  
+                      margin: 2% auto 0% auto;              
+                    }
+                  }
+                  @include respond(maxNavBar){                                   
+                    flex-direction: column;                  
+                  }
+                }
+
+                &-thirteen{
+                  display: flex;
+                  width: 100%;
+                  height: auto;
+                  margin: 0% auto 5% auto;                  
+
+                  &-left{
+                    display: flex;
+                    width: 60%;
+                    height: 100%;                    
+
+                    &-content{
+                      display: flex;
+                      flex-direction: column;
+                      width: 100%;
+                      height: auto;
+                      padding: 3%;
+                      background-color: $ligth-gray-color;
+                      
+
+                      &-head{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 5% 0% 5% 0%;
+                        font-size: 1.8rem;
+                        float: left;
+                        font-weight: 600;                        
+                      }
+
+                      &-txt{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 0% 0% 5% 0%;
+                        hyphens: auto;
+                        
+                        font-size: 1.4rem;
+                        flex-direction: column;
+
+                        p{
+                          margin: 0;
+                          margin-bottom: 3%;
+
+                          &:last-child{
+                            margin-bottom: 0;
+                          }
+                        }
+                        
+                      }
+                      
+                    }
+                    @include respond(maxNavBar){                                   
+                      width: 100%;
+                      margin: 2% auto 2% auto;                    
+                    }
+
+                  }
+
+                  &-right{
+                    display: flex;
+                    width: 40%;
+                    height: auto;                    
+                    margin-left: 2%;
+
+                    &-vid{
+                      overflow: hidden;
+                      padding-bottom: 56.25%;
+                      position: relative;
+                      height: auto;
+                      width: 100%;
+                      
+                      iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                      }
+                      
+                    }
+                    
+                    @include respond(maxNavBar){                                   
+                      width: 100%;
+                      margin: 0;                    
+                    }
+                  }
+                  @include respond(maxNavBar){                                   
+                    flex-direction: column-reverse;                    
+                  }
+                }
+
+                &-fourteen{
+                  display: flex;
+                  width: 100%;
+                  height: auto;
+                  margin: 0% auto 5% auto;                  
+
+                  &-left{
+                    display: flex;
+                    width: 40%;
+                    height: auto;                                      
+
+                    &-vid{
+                      overflow: hidden;
+                      padding-bottom: 56.25%;
+                      position: relative;
+                      height: auto;
+                      width: 100%;
+                      
+                      iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                      }
+                      
+                    }
+
+                    @include respond(maxNavBar){                                   
+                      width: 100%;                 
+                    }
+                  }
+
+                  &-right{
+                    display: flex;
+                    width: 60%;
+                    height: 100%;                    
+                    margin-left: 2%;
+
+                    &-content{
+                      display: flex;
+                      flex-direction: column;
+                      width: 100%;
+                      height: auto;
+                      padding: 3%;
+                      background-color: $ligth-gray-color;
+                      
+
+                      &-head{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 5% 0% 5% 0%;
+                        font-size: 1.8rem;
+                        float: left;
+                        font-weight: 600;                        
+                      }
+
+                      &-txt{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 0% 0% 5% 0%;
+                        hyphens: auto;
+                        
+                        font-size: 1.4rem;
+                        
+                      }
+                      
+                    }
+                    @include respond(maxNavBar){                                   
+                      width: 100%;  
+                      margin: 2% auto 0% auto;              
+                    }
+                  }
+                  @include respond(maxNavBar){                                   
+                    flex-direction: column;                  
+                  }
+                }
+
+                &-fifteen{
+                  display: flex;
+                  width: 100%;
+                  height: auto;
+                  margin: 0% auto 5% auto;                  
+
+                  &-left{
+                    display: flex;
+                    width: 60%;
+                    height: 100%;                    
+
+                    &-content{
+                      display: flex;
+                      flex-direction: column;
+                      width: 100%;
+                      height: auto;
+                      padding: 3%;
+                      background-color: $ligth-gray-color;
+                      
+
+                      &-head{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 5% 0% 5% 0%;
+                        font-size: 1.8rem;
+                        float: left;
+                        font-weight: 600;                        
+                      }
+
+                      &-txt{
+                        display: flex;
+                        width: 100%;
+                        font-family: 'Lato';
+                        margin: 0% 0% 5% 0%;
+                        hyphens: auto;
+                        
+                        font-size: 1.4rem;
+                        flex-direction: column;
+
+                        p{
+                          margin: 0;
+                          margin-bottom: 3%;
+
+                          &:last-child{
+                            margin-bottom: 0;
+                          }
+                        }
+                        
+                      }
+                      
+                    }
+                    @include respond(maxNavBar){                                   
+                      width: 100%;
+                      margin: 2% auto 2% auto;                    
+                    }
+
+                  }
+
+                  &-right{
+                    display: flex;
+                    width: 40%;
+                    height: auto;                    
+                    margin-left: 2%;
+
+                    &-vid{
+                      overflow: hidden;
+                      padding-bottom: 56.25%;
+                      position: relative;
+                      height: auto;
+                      width: 100%;
+                      
+                      iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                      }
+                      
+                    }
+                    
+                    @include respond(maxNavBar){                                   
+                      width: 100%;
+                      margin: 0;                    
+                    }
+                  }
+                  @include respond(maxNavBar){                                   
+                    flex-direction: column-reverse;                    
+                  }
+                }
+
+              
+            }
+          }
+        }
+
+    }
+
+}

@@ -1,0 +1,14 @@
+@import './mixins';
+
+.content{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;  
+   
+  
+  @include respond(maxNavBar){                                   
+    height: 100vh;  
+    overflow-y: scroll;
+  }
+}
